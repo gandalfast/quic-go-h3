@@ -3,8 +3,8 @@ package ackhandler
 import (
 	"slices"
 
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/wire"
+	"github.com/gandalfast/quic-go-h3/internal/protocol"
+	"github.com/gandalfast/quic-go-h3/internal/wire"
 )
 
 // interval is an interval from one PacketNumber to the other

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/quic-go/quic-go"
+	"github.com/gandalfast/quic-go-h3"
 )
 
 const streamDatagramQueueLen = 32

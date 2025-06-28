@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/quic-go/quic-go"
+	"github.com/gandalfast/quic-go-h3"
 )
 
 type QUICSendStream interface {

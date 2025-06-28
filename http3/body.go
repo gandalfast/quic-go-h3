@@ -6,7 +6,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/quic-go/quic-go"
+	"github.com/gandalfast/quic-go-h3"
 )
 
 // A Hijacker allows hijacking of the stream creating part of a quic.Conn from a http.ResponseWriter.

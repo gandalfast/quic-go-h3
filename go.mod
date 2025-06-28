@@ -1,4 +1,4 @@
-module github.com/quic-go/quic-go
+module github.com/gandalfast/quic-go-h3
 
 go 1.23
 

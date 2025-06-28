@@ -8,7 +8,7 @@ import (
 	mrand "math/rand/v2"
 	"testing"
 
-	"github.com/quic-go/quic-go/internal/testdata"
+	"github.com/gandalfast/quic-go-h3/internal/testdata"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

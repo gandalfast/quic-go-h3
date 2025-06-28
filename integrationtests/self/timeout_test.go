@@ -13,10 +13,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/quic-go/quic-go"
-	quicproxy "github.com/quic-go/quic-go/integrationtests/tools/proxy"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/logging"
+	"github.com/gandalfast/quic-go-h3"
+	quicproxy "github.com/gandalfast/quic-go-h3/integrationtests/tools/proxy"
+	"github.com/gandalfast/quic-go-h3/internal/protocol"
+	"github.com/gandalfast/quic-go-h3/logging"
 
 	"github.com/stretchr/testify/require"
 )
@@ -227,7 +227,7 @@ func TestKeepAlive(t *testing.T) {
 	require.True(t, nerr.Timeout())
 
 	// can't rely on the server connection closing, since we impose a minimum idle timeout of 5s,
-	// see https://github.com/quic-go/quic-go/issues/4751
+	// see https://github.com/gandalfast/quic-go-h3/issues/4751
 	serverConn.CloseWithError(0, "")
 }
 

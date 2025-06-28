@@ -5,12 +5,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/ackhandler"
-	"github.com/quic-go/quic-go/internal/flowcontrol"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/utils/ringbuffer"
-	"github.com/quic-go/quic-go/internal/wire"
-	"github.com/quic-go/quic-go/quicvarint"
+	"github.com/gandalfast/quic-go-h3/internal/ackhandler"
+	"github.com/gandalfast/quic-go-h3/internal/flowcontrol"
+	"github.com/gandalfast/quic-go-h3/internal/protocol"
+	"github.com/gandalfast/quic-go-h3/internal/utils/ringbuffer"
+	"github.com/gandalfast/quic-go-h3/internal/wire"
+	"github.com/gandalfast/quic-go-h3/quicvarint"
 )
 
 const (
@@ -213,7 +213,7 @@ func (f *framer) appendControlFrames(
 // This is a hack.
 // It is easier to implement than propagating an error return value in QueueControlFrame.
 // The correct solution would be to queue frames with their respective structs.
-// See https://github.com/quic-go/quic-go/issues/4271 for the queueing of stream-related control frames.
+// See https://github.com/gandalfast/quic-go-h3/issues/4271 for the queueing of stream-related control frames.
 func (f *framer) QueuedTooManyControlFrames() bool {
 	return f.queuedTooManyControlFrames
 }

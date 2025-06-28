@@ -3,7 +3,7 @@ package logging_test
 import (
 	"testing"
 
-	"github.com/quic-go/quic-go/logging"
+	"github.com/gandalfast/quic-go-h3/logging"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
